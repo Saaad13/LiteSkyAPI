@@ -13,8 +13,6 @@ public class Quest {
         this.dataReward = dataReward;
     }
 
-    publ
-
     public DataAction getDataAction() {
         return dataAction;
     }

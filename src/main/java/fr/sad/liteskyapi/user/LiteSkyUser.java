@@ -3,6 +3,7 @@ package fr.sad.liteskyapi.user;
 import fr.sad.liteskyapi.equipment.EquipmentPlayer;
 import fr.sad.liteskyapi.skills.Skill;
 import fr.sad.liteskyapi.skills.SkillType;
+import org.bukkit.ChatColor;
 import org.bukkit.OfflinePlayer;
 
 import java.util.Map;
@@ -15,6 +16,8 @@ public interface LiteSkyUser {
     void setHealth(float health);
 
     float getHealth();
+
+    ChatColor getColorHealth();
 
     void setMaxHealth(float maxHealth);
 
@@ -37,4 +40,5 @@ public interface LiteSkyUser {
     Map<SkillType, Skill> getSkills();
 
     OfflinePlayer getOfflinePlayer();
+
 }
